@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #F5F6F4 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a {
+  text-decoration: none;
+}
+
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 536px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 536px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.row {
+  width: 536px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  text-align: center;
+}
+
+.col .Head {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+.hamburgerIcon {
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.List {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  width: 152px;
+  margin-top: 17px;
+}
+
+.ListItem {
+  margin: 10px 0;
+}
+
+.ListItem a {
+  color: #071120;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #E0FFB9;
+
+}
+
+.col .create .createIcon {
+  font-size: 24px;
+}
+
+/*Navbar Finish */
+
+
+/*Search Start */
+.Search {
+  /*Ayarlanacak */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchWrapper {
+  width: 536px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 0 7px;
+}
+
+.SearchIcon {
+  font-size: 24px;
+}
+
+.SearchInput {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/*Search Finish */
+
+
+/*Data Item */
+.DataWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.DataItem {
+  background-color: #FFFFFF;
+  margin-top: 12px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.nameVersion {
+  display: flex;
+  align-items: center;
+}
+
+.ItemName {
+  color: #071120;
+}
+
+.ItemDesc {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #071120;
+}
+
+.ItemVersion {
+  padding: 5px;
+  color: #071120;
+}
+
+.DataItemFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.ReadMore {
+  background-color: #E0FFB9;
+  border-radius: 9px;
+  padding: 12px 16px;
+}
+
+.ReadMoreBtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  color: #071120;
+}
+
+.IconList {
+  display: flex;
+}
+
+.IconListItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #EEEEEE;
+  border-radius: 9px;
+  margin: 0 4px;
+}
+
+.IconListItemIcon {
+  color: #071120;
+  font-size: 18px;
+}
+
+/* About Start */
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About .AboutDesc>h1 {
+  margin-bottom: 1rem;
+}
+
+/* About Finish */

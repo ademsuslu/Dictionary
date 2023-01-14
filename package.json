@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,8 +12,12 @@
     "@next/font": "13.1.2",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.2",
+    "hamburger-react": "^2.5.0",
     "next": "13.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.7.1",
+    "use-debounce": "^9.0.3"
   }
 }
