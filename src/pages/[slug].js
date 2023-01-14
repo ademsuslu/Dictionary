@@ -16,7 +16,7 @@ const Details = ({ data }) => {
       <div>
         <p>{data?.description}</p>
       </div>
-      <div>
+      <div className="DetayIconBar">
         <IconsBar whiteBackground />
       </div>
     </>
