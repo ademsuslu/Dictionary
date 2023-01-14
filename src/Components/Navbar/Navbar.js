@@ -39,6 +39,7 @@ export default function Navbar() {
           <a
             href="https://t.me/opendictionary1/3"
             target="_blank"
+            rel="noreferrer"
             className="create"
           >
             <BsPlus className="createIcon" />
