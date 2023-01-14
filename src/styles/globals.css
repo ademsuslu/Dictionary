@@ -211,6 +211,10 @@ li {
   margin: 0 4px;
 }
 
+.IconListItemWhite {
+  background-color: #FFFFFF;
+}
+
 .IconListItemIcon {
   color: #071120;
   font-size: 18px;
@@ -228,3 +232,22 @@ li {
 }
 
 /* About Finish */
+
+/*Detay Start */
+.DetayHead {
+  margin-bottom: 1rem;
+}
+
+
+.DetayIconList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #EEEEEE;
+  border-radius: 9px;
+  margin: 0 4px;
+}
+
+
+/*Detay Finish */
