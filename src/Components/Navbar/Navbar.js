@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
         <div className="col">
           <a
-            href="https://t.me/opendictionary1/3"
+            href="https://t.me/opendictionary1/4"
             target="_blank"
             rel="noreferrer"
             className="create"

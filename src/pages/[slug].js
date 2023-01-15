@@ -2,10 +2,6 @@ import IconsBar from "@/Components/Icons/IconsBar";
 import dynamic from "next/dynamic";
 import DictionaryData from "../Data/dictionary";
 
-/* const Comments = dynamic(() => import("@/Components/Comments"), {
-  ssr: false,
-}); */
-
 const Details = ({ data }) => {
   const script = `<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="8lLlUBuH" data-limit="5" />`;
 
@@ -20,7 +16,6 @@ const Details = ({ data }) => {
       <div className="DetayIconBar">
         <IconsBar whiteBackground />
       </div>
-      {/*<Comments />*/}
       <div
         style={{ marginTop: "2rem" }}
         dangerouslySetInnerHTML={{ __html: script }}
