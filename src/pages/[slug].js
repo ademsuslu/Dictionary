@@ -3,8 +3,6 @@ import DictionaryData from "../Data/dictionary";
 import { useEffect } from "react";
 
 const Details = ({ data }) => {
-  // const script = `<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="8lLlUBuH" data-limit="5" />`;
-
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
@@ -25,11 +23,7 @@ const Details = ({ data }) => {
       <div className="DetayIconBar">
         <IconsBar whiteBackground />
       </div>
-      <div id="comments-container"></div>
-      {/* <div
-        style={{ marginTop: "2rem" }}
-        dangerouslySetInnerHTML={{ __html: script }}
-      /> */}
+      <div style={{ marginTop: "2rem" }} id="comments-container"></div>
     </>
   );
 };
