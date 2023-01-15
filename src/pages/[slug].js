@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import DictionaryData from "../Data/dictionary";
 
 const Details = ({ data }) => {
-  const script = `<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="8lLlUBuH" data-limit="5" />`;
+  // const script = `<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="8lLlUBuH" data-limit="5" />`;
 
   return (
     <>
@@ -16,10 +16,10 @@ const Details = ({ data }) => {
       <div className="DetayIconBar">
         <IconsBar whiteBackground />
       </div>
-      <div
+      {/* <div
         style={{ marginTop: "2rem" }}
         dangerouslySetInnerHTML={{ __html: script }}
-      />
+      /> */}
     </>
   );
 };
