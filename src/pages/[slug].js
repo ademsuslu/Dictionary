@@ -21,7 +21,11 @@ const Details = ({ data }) => {
         <p>{data?.description}</p>
       </div>
       <div className="DetayIconBar">
-        <IconsBar whiteBackground />
+        <IconsBar
+          likeLink={data?.likeLink}
+          saveLink={data?.saveLink}
+          whiteBackground
+        />
       </div>
       <div style={{ marginTop: "2rem" }} id="comments-container"></div>
     </>
