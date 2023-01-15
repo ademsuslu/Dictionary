@@ -17,7 +17,7 @@ export default function SearchItem({ item }) {
           </Link>
         </div>
         <div className="ReadMores">
-          <IconsBar />
+          <IconsBar likeLink={item?.likeLink} saveLink={item?.saveLink} />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { BiMessageRounded } from "react-icons/bi";
 import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
 
-export default function IconsBar({ whiteBackground }) {
+export default function IconsBar({ whiteBackground, likeLink, saveLink }) {
   const { asPath } = useRouter();
   const origin =
     typeof window !== "undefined" && window.location.origin
@@ -22,14 +22,15 @@ export default function IconsBar({ whiteBackground }) {
   return (
     <ul className="IconList">
       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
-        <AiOutlineHeart className="IconListItemIcon" />
+        <a href={likeLink}>
+          <AiOutlineHeart className="IconListItemIcon" />
+        </a>
       </li>
       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
-        <BsBookmark className="IconListItemIcon" />
+        <a href={saveLink}>
+          <BsBookmark className="IconListItemIcon" />
+        </a>
       </li>
-      {/*       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
-          <BiMessageRounded className="IconListItemIcon" />
-      </li> */}
       <li
         className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}
         onClick={copyToClipboard}
