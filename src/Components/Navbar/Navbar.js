@@ -27,7 +27,13 @@ export default function Navbar() {
                   <Link href="/About">About Us</Link>
                 </li>
                 <li className="ListItem">
-                  <Link href="/Telegram">Telegram</Link>
+                  <a
+                    rel="noreferrer"
+                    target={"_blank"}
+                    href="https://t.me/opendictionary1"
+                  >
+                    Telegram
+                  </a>
                 </li>
               </ul>
             )}
