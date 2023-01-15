@@ -12,9 +12,9 @@ export default function SearchItem({ item }) {
       <span className="ItemDesc">{item?.description?.slice(0, 50)}..</span>
       <div className="DataItemFooter">
         <div className="ReadMore">
-          <Link href={`/${item?.slug}`}>
+          <a href={`/${item?.slug}`}>
             <button className="ReadMoreBtn">Read more</button>
-          </Link>
+          </a>
         </div>
         <div className="ReadMores">
           <IconsBar />

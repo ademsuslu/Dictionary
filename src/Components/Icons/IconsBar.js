@@ -27,9 +27,9 @@ export default function IconsBar({ whiteBackground }) {
       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
         <BsBookmark className="IconListItemIcon" />
       </li>
-      <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
-        <BiMessageRounded className="IconListItemIcon" />
-      </li>
+      {/*       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
+          <BiMessageRounded className="IconListItemIcon" />
+      </li> */}
       <li
         className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}
         onClick={copyToClipboard}

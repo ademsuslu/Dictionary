@@ -1,5 +1,10 @@
 import IconsBar from "@/Components/Icons/IconsBar";
+import dynamic from "next/dynamic";
 import DictionaryData from "../Data/dictionary";
+
+const Comments = dynamic(() => import("@/Components/Comments"), {
+  ssr: false,
+});
 
 const Details = ({ data }) => {
   return (
@@ -13,14 +18,7 @@ const Details = ({ data }) => {
       <div className="DetayIconBar">
         <IconsBar whiteBackground />
       </div>
-      <div style={{ marginTop: "2rem", borderRadius: "16px" }}>
-        <script
-          async
-          src="https://comments.app/js/widget.js?3"
-          data-comments-app-website="8lLlUBuH"
-          data-limit="5"
-        />
-      </div>
+      <Comments />
     </>
   );
 };
