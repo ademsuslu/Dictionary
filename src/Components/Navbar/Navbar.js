@@ -4,6 +4,7 @@ import { BsPlus } from "react-icons/bs";
 import { Slant as Hamburger } from "hamburger-react";
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
+  console.log(isOpen);
   return (
     <div className="container">
       <div className="row">
