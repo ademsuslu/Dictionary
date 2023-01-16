@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { useDebounce } from "use-debounce";
 import { generatedData } from "@/pages/[slug]";
+import toast from "react-hot-toast";
 
 const searchByName = (obj, searchTerm) => {
   // Use Object.values to get an array of the values in the object
@@ -19,6 +20,9 @@ const searchByName = (obj, searchTerm) => {
     )
       return true;
   });
+  if (results.length === 0) {
+    toast.error("No results, please open dictionary");
+  }
   return results;
 };
 
