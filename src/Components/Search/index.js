@@ -1,8 +1,8 @@
 import SearchItem from "./SearchItem";
-import Data from "../../Data/dictionary";
 import { CiSearch } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { useDebounce } from "use-debounce";
+import { generatedData } from "@/pages/[slug]";
 
 const searchByName = (obj, searchTerm) => {
   // Use Object.values to get an array of the values in the object
@@ -12,9 +12,13 @@ const searchByName = (obj, searchTerm) => {
   const flatValues = values.flat();
 
   // Use Array.filter to return an array of objects that have a name property that includes the search term
-  const results = flatValues.filter((item) =>
-    item.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const results = flatValues.filter((item) => {
+    if (
+      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.md5 === searchTerm
+    )
+      return true;
+  });
   return results;
 };
 
@@ -25,7 +29,7 @@ const Search = () => {
 
   useEffect(() => {
     if (debouncedSearchTerm === "") return setFilteredData([]);
-    setFilteredData(searchByName(Data, debouncedSearchTerm));
+    setFilteredData(searchByName(generatedData, debouncedSearchTerm));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearchTerm]);
 

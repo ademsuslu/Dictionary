@@ -3,6 +3,11 @@ import DictionaryData from "../Data/dictionary";
 import { useEffect } from "react";
 import MD5 from "crypto-js/md5";
 
+export const generatedData = DictionaryData.map((item) => ({
+  ...item,
+  md5: MD5(item?.name + item?.description + item?.wordVersion).toString(),
+}));
+
 const Details = ({ data }) => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -20,7 +25,7 @@ const Details = ({ data }) => {
         <p className="DetayVersion">{data?.wordVersion}</p>
       </div>
       <div className="Detay">
-        <span>{MD5(data?.description).toString()}</span>
+        <span>{data?.md5}</span>
       </div>
 
       <div>
@@ -40,7 +45,7 @@ const Details = ({ data }) => {
 
 export async function getStaticPaths() {
   return {
-    paths: DictionaryData.map((item) => ({
+    paths: generatedData.map((item) => ({
       params: {
         slug: item.slug,
       },
@@ -52,7 +57,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   return {
     props: {
-      data: DictionaryData.filter(
+      data: generatedData.filter(
         (item) => item.slug === context.params?.slug
       )?.[0],
     },
