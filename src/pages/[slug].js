@@ -16,6 +16,7 @@ const Details = ({ data }) => {
     <>
       <div className="Detay">
         <h1 className="DetayHead">{data?.name}</h1>
+        <p className="DetayVersion">{data?.wordVersion}</p>
       </div>
       <div>
         <p>{data?.description}</p>

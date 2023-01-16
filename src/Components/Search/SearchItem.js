@@ -7,7 +7,7 @@ export default function SearchItem({ item }) {
     <div className="DataItem">
       <div className="nameVersion">
         <h3 className="ItemName">{item?.name}</h3>
-        <p className="ItemVersion">1.1.3</p>
+        <p className="ItemVersion">{item?.wordVersion}</p>
       </div>
       <span className="ItemDesc">{item?.description?.slice(0, 50)}..</span>
       <div className="DataItemFooter">
