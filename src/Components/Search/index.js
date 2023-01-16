@@ -25,7 +25,7 @@ const Search = () => {
 
   useEffect(() => {
     if (debouncedSearchTerm === "") return setFilteredData([]);
-    setFilteredData(searchByName(Data, debouncedSearchTerm)?.slice(0, 3));
+    setFilteredData(searchByName(Data, debouncedSearchTerm));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearchTerm]);
 
@@ -45,7 +45,7 @@ const Search = () => {
           </div>
         </div>
       </main>
-      <div>
+      <div className="SearchItems">
         {filteredData?.map((item) => {
           return <SearchItem item={item} key={item.slug} />;
         })}

@@ -144,6 +144,11 @@ li {
   padding: 0 10px;
 }
 
+.SearchItems {
+  height: 400px;
+  overflow-y: auto;
+}
+
 /*Search Finish */
 
 
