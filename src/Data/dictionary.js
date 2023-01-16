@@ -8,7 +8,6 @@ const dictionary = [
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
     version: "1.0",
-    md5: "123",
   },
   {
     name: "Apple",
@@ -19,7 +18,6 @@ const dictionary = [
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
     version: "1.0",
-    md5: "9879797",
   },
   {
     name: "Apple",
@@ -30,7 +28,6 @@ const dictionary = [
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
     version: "1.0",
-    md5: "5464454",
   },
   {
     name: "Banana",
@@ -41,7 +38,6 @@ const dictionary = [
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
     version: "1.0",
-    md5: "1234",
   },
   {
     name: "Orange",
@@ -52,7 +48,6 @@ const dictionary = [
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
     version: "1.0",
-    md5: "12345",
   },
 ];
 

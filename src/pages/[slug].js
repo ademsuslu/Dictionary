@@ -1,6 +1,7 @@
 import IconsBar from "@/Components/Icons/IconsBar";
 import DictionaryData from "../Data/dictionary";
 import { useEffect } from "react";
+import MD5 from "crypto-js/md5";
 
 const Details = ({ data }) => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const Details = ({ data }) => {
         <p className="DetayVersion">{data?.wordVersion}</p>
       </div>
       <div className="Detay">
-        <span>{data?.md5}</span>
+        <span>{MD5(data?.description).toString()}</span>
       </div>
 
       <div>
