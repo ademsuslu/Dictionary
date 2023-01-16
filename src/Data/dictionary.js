@@ -12,7 +12,7 @@ const dictionary = [
   },
   {
     name: "Apple",
-    wordVersion: "1.1.0",
+    wordVersion: "1.1.2",
     slug: "apple-1-1-2",
     description:
       "A round fruit with red or green skin and a firm white inside.",
@@ -35,7 +35,7 @@ const dictionary = [
   {
     name: "Banana",
     wordVersion: "1.1.3",
-    slug: "banana",
+    slug: "banana-1-1-3",
     description:
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
@@ -46,7 +46,7 @@ const dictionary = [
   {
     name: "Orange",
     wordVersion: "1.1.0",
-    slug: "orange",
+    slug: "orange-1-1-0",
     description:
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
