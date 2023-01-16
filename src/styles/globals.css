@@ -257,6 +257,11 @@ li {
   color: #071120;
 }
 
+.Detay span {
+  opacity: 0.6;
+  font-style: italic;
+}
+
 
 .DetayIconList {
   display: flex;

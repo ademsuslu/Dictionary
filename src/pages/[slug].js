@@ -18,6 +18,10 @@ const Details = ({ data }) => {
         <h1 className="DetayHead">{data?.name}</h1>
         <p className="DetayVersion">{data?.wordVersion}</p>
       </div>
+      <div className="Detay">
+        <span>{data?.md5}</span>
+      </div>
+
       <div>
         <p>{data?.description}</p>
       </div>
