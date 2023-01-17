@@ -4,6 +4,7 @@ import { BsPlus } from "react-icons/bs";
 import { FiArrowLeft } from "react-icons/fi";
 import { Slant as Hamburger } from "hamburger-react";
 import { useRouter } from "next/router";
+import { telegramChannelName } from "@/Data/constants";
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const { asPath } = useRouter();
@@ -15,7 +16,7 @@ export default function Navbar() {
           <div className="col">
             {asPath === "/" ? (
               <a
-                href="https://t.me/opendictionary1/4"
+                href={`https://t.me/${telegramChannelName}/4`}
                 target="_blank"
                 rel="noreferrer"
                 className="create"
@@ -56,7 +57,7 @@ export default function Navbar() {
                     <a
                       rel="noreferrer"
                       target={"_blank"}
-                      href="https://t.me/opendictionary1"
+                      href={`https://t.me/${telegramChannelName}`}
                     >
                       Telegram
                     </a>

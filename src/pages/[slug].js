@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import MD5 from "crypto-js/md5";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { telegramChannelName } from "@/Data/constants";
 
 export const generatedData = DictionaryData.map((item) => ({
   ...item,
@@ -27,7 +28,7 @@ const Details = ({ data }) => {
       script.src = "https://telegram.org/js/telegram-widget.js?21";
       script.setAttribute(
         "data-telegram-discussion",
-        `opendictionary1/${data?.telegramPost}`
+        `${telegramChannelName}/${data?.telegramPost}`
       );
       script.setAttribute("data-comments-limit", "5");
       document.getElementById("comments-container").appendChild(script);
