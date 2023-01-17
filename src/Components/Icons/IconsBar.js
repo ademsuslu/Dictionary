@@ -27,7 +27,7 @@ export default function IconsBar({ whiteBackground, likeLink, saveLink }) {
         </a>
       </li>
       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
-        <a href={saveLink}>
+        <a href={saveLink} target="_blank" rel="noreferrer">
           <BsBookmark className="IconListItemIcon" />
         </a>
       </li>
