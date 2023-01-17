@@ -7,7 +7,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
-    telegramPost: "1",
+    telegramPost: "5",
     version: "1.0",
   },
   {
@@ -18,7 +18,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
-    telegramPost: "2",
+    telegramPost: "6",
     version: "1.0",
   },
   {
@@ -29,40 +29,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
-    telegramPost: "3",
-    version: "1.0",
-  },
-  {
-    name: "Banana",
-    wordVersion: "1.1.3",
-    slug: "banana-1-1-3",
-    description:
-      "A round fruit with red or green skin and a firm white inside.",
-    likeLink: "https://t.me/opendictionary1/2",
-    saveLink: "https://t.me/opendictionary1/2",
-    telegramPost: "4",
-    version: "1.0",
-  },
-  {
-    name: "Orange",
-    wordVersion: "1.1.0",
-    slug: "orange-1-1-0",
-    description:
-      "A round fruit with red or green skin and a firm white inside.",
-    likeLink: "https://t.me/opendictionary1/2",
-    saveLink: "https://t.me/opendictionary1/2",
-    telegramPost: "5",
-    version: "1.0",
-  },
-  {
-    name: "Strawberry",
-    wordVersion: "1.1.0",
-    slug: "strawberry-1-1-0",
-    description:
-      "A round fruit with red or green skin and a firm white inside.",
-    likeLink: "https://t.me/opendictionary1/2",
-    saveLink: "https://t.me/opendictionary1/2",
-    telegramPost: "6",
+    telegramPost: "7",
     version: "1.0",
   },
 ];
