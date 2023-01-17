@@ -3,6 +3,7 @@ import DictionaryData from "../Data/dictionary";
 import { useEffect, useRef } from "react";
 import MD5 from "crypto-js/md5";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export const generatedData = DictionaryData.map((item) => ({
   ...item,
@@ -11,7 +12,13 @@ export const generatedData = DictionaryData.map((item) => ({
 const Details = ({ data }) => {
   const effectRan = useRef(false);
 
-  console.log(data?.telegramPost);
+  const { asPath } = useRouter();
+  const origin =
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+
+  const URL = `${origin}${asPath}`;
 
   useEffect(() => {
     if (effectRan.current === false) {
@@ -32,10 +39,7 @@ const Details = ({ data }) => {
     <>
       <Head>
         <title>{data?.name} - #OpenDictionary</title>
-        <link
-          rel="canonical"
-          href={`https://t.me/opendictionary1/${data?.telegramPost}`}
-        />
+        <link rel="canonical" href={URL} />
       </Head>
       <div className="Detay">
         <h1 className="DetayHead">{data?.name}</h1>
