@@ -8,9 +8,10 @@ export const generatedData = DictionaryData.map((item) => ({
   ...item,
   md5: MD5(item?.description).toString(),
 }));
-
 const Details = ({ data }) => {
   const effectRan = useRef(false);
+
+  console.log(data?.telegramPost);
 
   useEffect(() => {
     if (effectRan.current === false) {
@@ -31,6 +32,10 @@ const Details = ({ data }) => {
     <>
       <Head>
         <title>{data?.name} - #OpenDictionary</title>
+        <link
+          rel="canonical"
+          href={`https://t.me/opendictionary1/${data?.telegramPost}`}
+        />
       </Head>
       <div className="Detay">
         <h1 className="DetayHead">{data?.name}</h1>
