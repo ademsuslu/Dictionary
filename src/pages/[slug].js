@@ -1,36 +1,50 @@
 import IconsBar from "@/Components/Icons/IconsBar";
 import DictionaryData from "../Data/dictionary";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import MD5 from "crypto-js/md5";
+import Head from "next/head";
 
 export const generatedData = DictionaryData.map((item) => ({
   ...item,
-  md5: MD5(item?.name + item?.description + item?.wordVersion).toString(),
+  md5: MD5(item?.description).toString(),
 }));
 
 const Details = ({ data }) => {
+  const effectRan = useRef(false);
+
   useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://comments.app/js/widget.js?3";
-    script.setAttribute("data-comments-app-website", "8lLlUBuH");
-    script.setAttribute("data-limit", "5");
-    document.getElementById("comments-container").appendChild(script);
+    if (effectRan.current === false) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://telegram.org/js/telegram-widget.js?21";
+      script.setAttribute(
+        "data-telegram-discussion",
+        `opendictionary1/${data?.telegramPost}`
+      );
+      script.setAttribute("data-comments-limit", "5");
+      document.getElementById("comments-container").appendChild(script);
+    }
+    return () => (effectRan.current = true);
   }, []);
 
   return (
     <>
+      <Head>
+        <title>{data?.name} - #OpenDictionary</title>
+      </Head>
       <div className="Detay">
         <h1 className="DetayHead">{data?.name}</h1>
         <p className="DetayVersion">{data?.wordVersion}</p>
-      </div>
-      <div className="Detay">
-        <span>{data?.md5}</span>
       </div>
 
       <div>
         <p>{data?.description}</p>
       </div>
+
+      <div className="DetayMd5">
+        <span>{data?.md5}</span>
+      </div>
+
       <div className="DetayIconBar">
         <IconsBar
           likeLink={data?.likeLink}

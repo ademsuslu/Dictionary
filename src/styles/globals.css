@@ -163,6 +163,7 @@ li {
 }
 
 .DataItem {
+  display: inline-block;
   background-color: #FFFFFF;
   margin-top: 12px;
   width: 100%;
@@ -262,9 +263,11 @@ li {
   color: #071120;
 }
 
-.Detay span {
+.DetayMd5 span {
+  display: inline-flex;
   opacity: 0.6;
   font-style: italic;
+  margin: 1rem 0;
 }
 
 

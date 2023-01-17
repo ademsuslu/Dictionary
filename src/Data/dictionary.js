@@ -7,6 +7,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
+    telegramPost: "2",
     version: "1.0",
   },
   {
@@ -17,6 +18,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
+    telegramPost: "2",
     version: "1.0",
   },
   {
@@ -27,6 +29,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
+    telegramPost: "2",
     version: "1.0",
   },
   {
@@ -37,6 +40,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
+    telegramPost: "3",
     version: "1.0",
   },
   {
@@ -47,6 +51,7 @@ const dictionary = [
       "A round fruit with red or green skin and a firm white inside.",
     likeLink: "https://t.me/opendictionary1/2",
     saveLink: "https://t.me/opendictionary1/2",
+    telegramPost: "4",
     version: "1.0",
   },
 ];

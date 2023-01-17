@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsBookmark, BsShare } from "react-icons/bs";
-import { BiMessageRounded } from "react-icons/bi";
+// import { BiMessageRounded } from "react-icons/bi";
 import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
 
