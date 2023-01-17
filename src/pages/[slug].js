@@ -58,7 +58,7 @@ const Details = ({ data }) => {
       <div className="DetayIconBar">
         <IconsBar
           likeLink={`tg://resolve?domain=opendictionary1&post=${data?.telegramPost}`}
-          saveLink={`tg://resolve?domain=opendictionary1&post=${data?.telegramPost}`}
+          saveLink={`https://t.me/${telegramChannelName}/${data?.telegramPost}`}
           whiteBackground
         />
       </div>
