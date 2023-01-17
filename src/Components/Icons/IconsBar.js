@@ -23,7 +23,7 @@ export default function IconsBar({ whiteBackground, likeLink, saveLink }) {
     <ul className="IconList">
       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>
         <a href={likeLink}>
-          <AiOutlineHeart className="IconListItemIcon" />
+          <AiOutlineHeart className="IconListItemIcon heart" />
         </a>
       </li>
       <li className={`IconListItem ${whiteBackground && "IconListItemWhite"}`}>

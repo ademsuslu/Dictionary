@@ -47,13 +47,13 @@ export default function Navbar() {
               </div>
               {isOpen && (
                 <ul className="List">
-                  <li className="ListItem">
+                  <li onClick={() => setOpen(false)} className="ListItem">
                     <Link href="/">Home</Link>
                   </li>
-                  <li className="ListItem">
+                  <li onClick={() => setOpen(false)} className="ListItem">
                     <Link href="/About">About Us</Link>
                   </li>
-                  <li className="ListItem">
+                  <li onClick={() => setOpen(false)} className="ListItem">
                     <a
                       rel="noreferrer"
                       target={"_blank"}
@@ -62,7 +62,7 @@ export default function Navbar() {
                       Telegram
                     </a>
                   </li>
-                  <li className="ListItem">
+                  <li onClick={() => setOpen(false)} className="ListItem">
                     <a
                       rel="noreferrer"
                       target={"_blank"}

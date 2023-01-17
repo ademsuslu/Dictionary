@@ -222,10 +222,17 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
   background-color: #EEEEEE;
   border-radius: 9px;
   margin: 0 4px;
+}
+
+.IconListItem a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .IconListItemWhite {
@@ -234,7 +241,11 @@ li {
 
 .IconListItemIcon {
   color: #071120;
-  font-size: 18px;
+  font-size: 1rem;
+}
+
+.heart {
+  font-size: 1.15rem;
 }
 
 /* About Start */
@@ -286,3 +297,8 @@ li {
 }
 
 /*Detay Finish */
+
+#telegram-discussion-opendictionary1-5-1 {
+  width: 100% !important;
+  min-width: unset !important;
+}
