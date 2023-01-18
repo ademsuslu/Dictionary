@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import IconsBar from "../Icons/IconsBar";
 
 export default function SearchItem({ item }) {
   return (
@@ -9,7 +8,12 @@ export default function SearchItem({ item }) {
         <h3 className="ItemName">{item?.name}</h3>
         <p className="ItemVersion">{item?.wordVersion}</p>
       </div>
-      <span className="ItemDesc">{item?.description?.slice(0, 50)}..</span>
+      <span className="ItemDesc">
+        {item?.description?.slice(0, 50)}{" "}
+        <p rel="noreferrer" href={`/${item?.slug}`}>
+          ...More
+        </p>
+      </span>
     </Link>
   );
 }

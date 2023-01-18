@@ -17,11 +17,19 @@ const searchByName = (obj, searchTerm) => {
     const regex = new RegExp(`.${searchTerm}.`, "i");
     const match =
       `${item.name} ${item.wordVersion}`.match(regex) ||
-      item.md5 === searchTerm;
+      item.md5 === searchTerm /* burdan sonrakı yerı ekledım  */ ||
+      item.name.toLowerCase().includes(searchTerm.toLowerCase());
     return match;
+
+    /*Eski code */
+    // if (
+    //   item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    //   item.md5 === searchTerm
+    // )
+    //   return true;
   });
   if (results.length === 0) {
-    toast.error("No results, please open dictionary");
+    toast.error("No results");
   }
   return results;
 };
