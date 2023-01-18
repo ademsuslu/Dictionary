@@ -149,6 +149,17 @@ li {
   overflow-y: auto;
 }
 
+.showMore {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.SearchItemDetay {
+  display: flex;
+  align-items: center;
+}
+
 /*Search Finish */
 
 

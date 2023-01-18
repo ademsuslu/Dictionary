@@ -8,12 +8,14 @@ export default function SearchItem({ item }) {
         <h3 className="ItemName">{item?.name}</h3>
         <p className="ItemVersion">{item?.wordVersion}</p>
       </div>
-      <span className="ItemDesc">
-        {item?.description?.slice(0, 50)}{" "}
-        <p rel="noreferrer" href={`/${item?.slug}`}>
-          ...More
+      <div className="SearchItemDetay">
+        <span className="ItemDesc">{item?.description?.slice(0, 50)} </span>
+        ...
+        <p className="showMore" rel="noreferrer" href={`/${item?.slug}`}>
+          {" "}
+          More
         </p>
-      </span>
+      </div>
     </Link>
   );
 }
