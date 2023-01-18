@@ -14,11 +14,11 @@ const searchByName = (obj, searchTerm) => {
 
   // Use Array.filter to return an array of objects that have a name property that includes the search term
   const results = flatValues.filter((item) => {
-    if (
-      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.md5 === searchTerm
-    )
-      return true;
+    const regex = new RegExp(`.${searchTerm}.`, "i");
+    const match =
+      `${item.name} ${item.wordVersion}`.match(regex) ||
+      item.md5 === searchTerm;
+    return match;
   });
   if (results.length === 0) {
     toast.error("No results, please open dictionary");

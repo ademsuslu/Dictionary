@@ -10,16 +10,6 @@ export default function SearchItem({ item }) {
         <p className="ItemVersion">{item?.wordVersion}</p>
       </div>
       <span className="ItemDesc">{item?.description?.slice(0, 50)}..</span>
-      {/*       <div className="DataItemFooter">
-        <div className="ReadMore">
-          <Link href={`/${item?.slug}`}>
-            <button className="ReadMoreBtn">Read more</button>
-          </Link>
-        </div>
-        <div className="ReadMores">
-          <IconsBar likeLink={item?.likeLink} saveLink={item?.saveLink} />
-        </div>
-      </div> */}
     </Link>
   );
 }
