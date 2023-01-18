@@ -20,9 +20,13 @@ const searchByName = (obj, searchTerm) => {
       item.md5 === searchTerm;
     return match;
   });
-  if (results.length === 0 || results) {
-    toast.error("No results.");
+
+  if (results?.length === 0) {
+    toast.error(
+      "No results. Please check spelling and read About Us. Happy Searching!"
+    );
   }
+
   return results;
 };
 
