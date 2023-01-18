@@ -14,22 +14,14 @@ const searchByName = (obj, searchTerm) => {
 
   // Use Array.filter to return an array of objects that have a name property that includes the search term
   const results = flatValues.filter((item) => {
-    const regex = new RegExp(`.${searchTerm}.`, "i");
+    const regex = new RegExp(searchTerm, "i");
     const match =
       `${item.name} ${item.wordVersion}`.match(regex) ||
-      item.md5 === searchTerm /* burdan sonrakı yerı ekledım  */ ||
-      item.name.toLowerCase().includes(searchTerm.toLowerCase());
+      item.md5 === searchTerm;
     return match;
-
-    /*Eski code */
-    // if (
-    //   item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    //   item.md5 === searchTerm
-    // )
-    //   return true;
   });
-  if (results.length === 0) {
-    toast.error("No results");
+  if (results.length === 0 || results) {
+    toast.error("No results.");
   }
   return results;
 };
