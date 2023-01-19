@@ -28,8 +28,8 @@ const dictionary = [
   },
   {
     name: "United States",
-    wordVersion: "1.1.1",
-    slug: "united-states-1-1-1",
+    wordVersion: "2.1.1",
+    slug: "united-states-2-1-1",
     description:
       "A Nation that borders with Canada to the north and Mexico to the south, with coasts on the Atlantic and the Pacific.",
     telegramPost: "8",
@@ -37,7 +37,7 @@ const dictionary = [
   },
   {
     name: "an apple a day",
-    wordVersion: "1.1.1",
+    wordVersion: "4.3.2",
     slug: "an-apple-a-day-4-2-3",
     description:
       "Drs orders. An apple a day keeps the doctors at bay.",
