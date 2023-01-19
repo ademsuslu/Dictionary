@@ -27,20 +27,20 @@ const dictionary = [
     version: "1.0",
   },
   {
-    name: "Banana",
+    name: "United States",
     wordVersion: "1.1.1",
-    slug: "banana-1-1-1",
+    slug: "united-states-1-1-1",
     description:
-      "A round fruit with red or green skin and a firm white inside.",
+      "A Nation that borders with Canada to the north and Mexico to the south, with coasts on the Atlantic and the Pacific.",
     telegramPost: "8",
     version: "1.0",
   },
   {
-    name: "Strawberry",
+    name: "an apple a day",
     wordVersion: "1.1.1",
-    slug: "strawberry-1-1-1",
+    slug: "an-apple-a-day-4-2-3",
     description:
-      "A round fruit with red or green skin and a firm white inside.",
+      "Drs orders. An apple a day keeps the doctors at bay.",
     telegramPost: "9",
     version: "1.0",
   },
