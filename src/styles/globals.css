@@ -309,6 +309,13 @@ li {
 }
 
 /*Detay Finish */
+/*200 px settings*/
+.tgme_post_discussion_header_wrap,
+.tgme_widget_message_wrap .js-widget_message_wrap,
+.tgme_post_discussion_footer {
+  padding-left: 0 !imporant!;
+  padding-right: 0 !imporant!;  
+}
 
 #telegram-discussion-opendictionary1-5-1 {
   width: 100% !important;
