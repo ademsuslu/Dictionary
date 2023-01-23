@@ -322,5 +322,5 @@ li {
   min-width: unset !important;
   /* revize codes */
   margin: 0 -15px  !important;
-  background-color: red !important;
+    width:calc(100% + 15px) !important
 }
