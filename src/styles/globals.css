@@ -240,6 +240,10 @@ li {
   border-radius: 9px;
   margin: 0 4px;
 }
+.IconListItem:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
 .IconListItem a {
   display: flex;
@@ -322,5 +326,5 @@ li {
   min-width: unset !important;
   /* revize codes */
   margin: 0 -15px  !important;
-    width:calc(100% + 15px) !important
+  width:calc(100% + 15px) !important
 }
