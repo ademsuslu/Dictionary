@@ -320,4 +320,7 @@ li {
 #telegram-discussion-opendictionary1-5-1 {
   width: 100% !important;
   min-width: unset !important;
+  /* revize codes */
+  margin: 0 -15px  !important;
+  background-color: red !important;
 }
