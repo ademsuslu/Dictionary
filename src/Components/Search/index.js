@@ -22,7 +22,7 @@ const searchByName = (obj, searchTerm) => {
   })
 
   if (results?.length === 0) {
-    toast.error(Message)
+    toast.error(NoResultMessage)
   }
 
   return results
