@@ -5,8 +5,11 @@ import { FiArrowLeft } from 'react-icons/fi'
 import { Slant as Hamburger } from 'hamburger-react'
 import { useRouter } from 'next/router'
 import {
+  AboutPage,
   ContributeLink,
   createWordButtonLink,
+  HomePage,
+  Telegram,
   telegramChannelName,
 } from '@/Data/constants'
 export default function Navbar() {
@@ -52,17 +55,13 @@ export default function Navbar() {
               {isOpen && (
                 <ul className='List'>
                   <li onClick={() => setOpen(false)} className='ListItem'>
-                    <Link href='/'>Home</Link>
+                    <Link href={HomePage}>Home</Link>
                   </li>
                   <li onClick={() => setOpen(false)} className='ListItem'>
-                    <Link href='/About'>About Us</Link>
+                    <Link href={AboutPage}>About Us</Link>
                   </li>
                   <li onClick={() => setOpen(false)} className='ListItem'>
-                    <a
-                      rel='noreferrer'
-                      target={'_blank'}
-                      href={`https://t.me/${telegramChannelName}`}
-                    >
+                    <a rel='noreferrer' target={'_blank'} href={Telegram}>
                       Telegram
                     </a>
                   </li>
