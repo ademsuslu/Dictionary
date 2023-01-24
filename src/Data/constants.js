@@ -12,6 +12,7 @@ export const Telegram = `https://t.me/${telegramChannelName}`
 export const NoResultMessage = `No results. Please check spelling and read About Us. Happy Searching!`
 // Toast Error Dynamic Message  End
 
+export const likeButtonLink = 'tg://resolve?domain=opendictionary1&post='
 
 
 /*This is the telegram group name for the dictionary */
