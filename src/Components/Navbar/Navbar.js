@@ -4,7 +4,11 @@ import { BsPlus } from 'react-icons/bs'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Slant as Hamburger } from 'hamburger-react'
 import { useRouter } from 'next/router'
-import { ContributeLink, createWordButtonLink } from '@/Data/constants'
+import {
+  ContributeLink,
+  createWordButtonLink,
+  telegramChannelName,
+} from '@/Data/constants'
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false)
   const { asPath } = useRouter()
