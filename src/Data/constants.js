@@ -9,8 +9,9 @@ export const Telegram = `https://t.me/${telegramChannelName}`
 //Navbar End
 
 // Toast Error Dynamic Message
-export const Message = `No results. Please check spelling and read About Us. Happy Searching!`
+export const NoResultMessage = `No results. Please check spelling and read About Us. Happy Searching!`
 // Toast Error Dynamic Message  End
+
 
 
 /*This is the telegram group name for the dictionary */
