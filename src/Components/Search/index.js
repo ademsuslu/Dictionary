@@ -4,7 +4,9 @@ import { useState, useEffect } from 'react'
 import { useDebounce } from 'use-debounce'
 import { generatedData } from '@/pages/[slug]'
 import toast from 'react-hot-toast'
-import { Message } from '@/Data/constants'
+
+import {  NoResultMessage } from '@/Data/constants'
+
 
 const searchByName = (obj, searchTerm) => {
   // Use Object.values to get an array of the values in the object
