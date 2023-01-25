@@ -329,3 +329,8 @@ li {
   margin: 0 -15px  !important;
   width:calc(100% + 15px) !important
 }
+.DetayMd5 { word-break: break-word;}
+
+#telegram-discussion-opendictionary1-5-1 body {
+  min-width: unset !imporant!
+}
