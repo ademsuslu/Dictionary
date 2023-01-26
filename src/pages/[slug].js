@@ -53,7 +53,7 @@ const Details = ({ data }) => {
         <p className='DetayVersion'>{data?.wordVersion}</p>
       </div>
 
-      <div>
+      <div className='Detay'>
         <p>{data?.description}</p>
       </div>
 
