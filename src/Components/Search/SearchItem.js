@@ -13,7 +13,7 @@ export default function SearchItem({ item }) {
           {item?.description?.slice(0, 50)}
           ...
           <a className='showMore' rel='noreferrer' href={`/${item?.slug}`}>
-            More
+            more
           </a>
         </span>
       </div>
