@@ -157,8 +157,8 @@ li {
 
 .showMore {
   text-decoration: underline;
-  font-weight: bold;
-  font-style: italic;
+  /* font-weight: bold; */
+  /* font-style: italic; */
 }
 
 .SearchItemDetay {
