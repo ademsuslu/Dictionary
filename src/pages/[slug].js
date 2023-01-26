@@ -37,7 +37,7 @@ const Details = ({ data }) => {
         `${telegramChannelName}/${data?.telegramPost}`
       )
       script.setAttribute('data-comments-limit', '5')
-      script.setAttribute('data-color', '9da2a6')
+      script.setAttribute('data-color', '071120')
       document.getElementById('comments-container').appendChild(script)
     }
     return () => (effectRan.current = true)
