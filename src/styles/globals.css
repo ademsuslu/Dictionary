@@ -106,10 +106,10 @@ li {
   border-radius: 50%;
   background-color: #FFF;
   color: inherit;
-  font-size: 48px;
+  font-size: 36px;
 }
 
-.col .create .createIcon {
+.createIcon {
   font-size: 48px;
 }
 
