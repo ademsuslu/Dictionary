@@ -338,8 +338,8 @@ li {
   width: 100% !important;
   min-width: unset !important;
   /* revize codes */
-  margin: 0 -15px  !important;
-  width:calc(100% + 30px) !important
+  /* to be deleted margin: 0 -15px  !important; */
+  /* to be deleted width:calc(100% + 30px) !important */
 }
 /* to be deleted .DetayMd5 { word-break: break-word;} */
 
