@@ -327,7 +327,7 @@ li {
   min-width: unset !important;
   /* revize codes */
   margin: 0 -15px  !important;
-  width:calc(100% + 15px) !important
+  width:calc(100% + 30px) !important
 }
 .DetayMd5 { word-break: break-word;}
 
