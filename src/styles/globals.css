@@ -24,6 +24,7 @@ li {
 .container {
   width: 100%;
   height: 55vh;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,12 +271,14 @@ li {
 /* About Start */
 .About {
   display: flex;
+  padding: 0 20px;
   justify-content: center;
   align-items: center;
 }
 
 .About .AboutDesc>h1 {
   margin-bottom: 1rem;
+  padding: 0 20px;
 }
 
 /* About Finish */
