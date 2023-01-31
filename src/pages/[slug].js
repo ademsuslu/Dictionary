@@ -54,7 +54,11 @@ const Details = ({ data }) => {
       </div>
 
       <div className='Detay'>
-        <p>{data?.description}</p>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: data?.description.replace(/\n/g, '<br />'),
+          }}
+        />
       </div>
 
       <div className='DetayMd5'>
